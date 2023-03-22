@@ -3,7 +3,7 @@ const Post = ({body, title, id}) => {
    
    
     return ( 
-        <div className="border border-solid p-4 m-4" key={post.id}>
+        <div className="border border-solid p-4 m-4 w-3/12 rounded-xl shadow-md" key={post.id}>
             <h4>{post.title}</h4>
             <p>{post.body}</p>
         </div>

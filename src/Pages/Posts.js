@@ -12,10 +12,8 @@ const Posts = () => {
 
 
     return ( 
-        <section className="m-28">
-            <div className="w-4/12">
-            {posts ? posts.map(p => <Post body={p.body} id={p.id} key={p.id} title={p.title}/>) : <p>Loading...</p>}
-        </div>
+        <section className="flex flex-wrap justify-center items-center mt-28 w-full">
+            {posts ? posts.map(p => <Post body={p.body} id={p.id} key={p.id} title={p.title}/>) : <p className="flex justify-center items-center w-full">Loading...</p>}
         </section>
      );
 }
