@@ -2,7 +2,7 @@ import { Typography } from "@mui/material"
 
 const Footer = () => {
     return ( 
-        <div>
+        <div className="mt-4">
             <Typography variant="h6" className="fixed flex justify-center items-center bottom-0 p-4 bg-slate-200 w-full">This Is Footer</Typography>
         </div>
      );

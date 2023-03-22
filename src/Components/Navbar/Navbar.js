@@ -7,7 +7,8 @@ const items = [
     { name: "Home", to: "/",},
     { name: "About Us", to: "/about-us",},
     { name: "Profile", to: "/profile", },
-    { name: "Posts", to: "/posts"}
+    { name: "Posts", to: "/posts" },
+    {name:"Blogs", to:"/blogs"},
     
 ]
 
