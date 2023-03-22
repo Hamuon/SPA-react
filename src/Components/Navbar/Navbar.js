@@ -4,9 +4,10 @@ import { NavLink } from "react-router-dom";
 
 
 const items = [
-    { name: "Home", to: "/", id:1},
-    { name: "About Us", to: "/about-us", id:2},
-    { name: "Profile", to: "/profile", id:3},
+    { name: "Home", to: "/",},
+    { name: "About Us", to: "/about-us",},
+    { name: "Profile", to: "/profile", },
+    { name: "Posts", to: "/posts"}
     
 ]
 
@@ -14,14 +15,14 @@ const Navbar = () => {
     return ( 
         <>
             <CssBaseline/>
-            <AppBar className='bg-transparent'>
+            <AppBar className='bg-white'>
                 <Toolbar>
                     <AccountCircleIcon className='text-black'></AccountCircleIcon>
                     <ul className='flex flex-row'>
                         {items.map((item) => (
                             <li className='list-none' key={item.to}>
                                 <NavLink
-                                    className='no-underline mr-4 text-black'
+                                    className='no-underline mr-8 text-black'
                                     to={item.to}
                                     >
                                     {item.name}
